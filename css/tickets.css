@@ -1,0 +1,378 @@
+/* 
+Los estilos se pensaron para dispositivos móviles.
+Las secciones y los elementos se respetaron por su ubicación.botones
+ */
+
+/* fuente de letra  */
+@import url('https://fonts.googleapis.com/css2?family=Voces&display=swap');
+
+/* Reseteo de estilos de navegadores */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Encabezado */
+body {
+    padding-top: 17em;
+}
+
+.encabezado {
+    background-color: #000;
+    width: 100%;
+    color: #fff;
+    width: 100%;
+    /* hacemos que la cabecera ocupe el ancho completo de la página */
+    left: 0;
+    /* Posicionamos la cabecera al lado izquierdo */
+    top: 0;
+    /* Posicionamos la cabecera pegada arriba */
+    position: fixed;
+    /* Hacemos que la cabecera tenga una posición fija */
+    z-index: 10;
+}
+
+.empresa {
+    display: flex;
+    align-items: center;
+}
+
+.encabezado .empresa .logo img {
+    width: 6em;
+}
+
+.encabezado .empresa .razon-social {
+    font-size: 1.5em;
+    font-family: 'Voces', cursive;
+}
+
+.encabezado .menu ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin-left: 1em;
+}
+
+.encabezado .menu ul li {
+    margin-bottom: .8em;
+    text-transform: uppercase;
+    font-family: 'Voces', cursive;
+}
+
+.encabezado .menu ul li a {
+    text-decoration: none;
+    color: #9f9f9f;
+}
+
+.encabezado .menu ul li a:hover {
+    border-bottom: #9f9f9f solid 1px;
+}
+
+.encabezado .menu ul li .primero {
+    color: #fff;
+    font-weight: bold;
+}
+
+.encabezado .menu ul li .primero:hover {
+    border-bottom: #fff solid 1px;
+}
+
+.encabezado .menu ul li .quinto {
+    color: rgb(119, 163, 74);
+}
+
+.encabezado .menu ul li .quinto:hover {
+    border-bottom: 1px solid rgb(119, 163, 74)
+}
+
+
+/* Categorías */
+
+.oradores {
+    padding-top: 1em;
+}
+
+.oradores p {
+    text-align: center;
+    font-family: 'Voces', cursive;
+}
+
+.p-orad1 {
+    margin-top: .5em;
+}
+
+.p-orad2 {
+    font-size: 2em;
+}
+
+.oradores .tarjetas {
+    margin-top: 1em;
+}
+
+.oradores .tarjetas .tarjeta {
+    width: 90%;
+    margin: 1em auto;
+    border: 1px solid rgb(161, 160, 160);
+    font-family: 'Voces', cursive;
+}
+
+.oradores .tarjetas .tarjeta img {
+    width: 100%;
+}
+
+.oradores .tarjetas .tarjeta span {
+    padding: 5px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 1em;
+    margin-left: 1em;
+}
+
+.oradores .tarjetas .tarjeta .js {
+    color: #fff;
+    background-color: goldenrod;
+}
+
+.oradores .tarjetas .tarjeta .re {
+    color: #fff;
+    background-color: rgb(25, 124, 140);
+}
+
+.oradores .tarjetas .tarjeta .ng {
+    color: #fff;
+    background-color: rgb(97, 97, 97);
+}
+
+.oradores .tarjetas .tarjeta .su {
+    color: #fff;
+    background-color: rgb(227, 16, 16);
+}
+
+.oradores .tarjetas .tarjeta .tarjeta-titulo {
+    text-align: left;
+    margin-left: .5em;
+    font-size: 2em;
+}
+
+.oradores .tarjetas .tarjeta .tarjeta-parrafo {
+    text-align: justify;
+    margin: auto 1em;
+    line-height: 1.5;
+}
+
+.tit_tarjeta,
+.porcentaje {
+    font-size: 2em;
+    margin: 1.5em auto;
+    font-weight: bold;
+}
+
+.descuento {
+    font-size: 1.5em;
+}
+
+.presentar {
+    color: #313131;
+    margin-bottom: 1em;
+}
+
+#tarj1 {
+    border: 1px solid blue;
+}
+
+#tarj2 {
+    border: 1px solid rgb(30, 94, 93)
+}
+
+#tarj3 {
+    border: 1px solid rgb(249, 98, 5);
+}
+
+
+/* Formulario de Inscripción */
+
+.venta{
+    text-align: center;
+}
+
+.valor_ticket{
+    text-align: center;
+    font-size: 3em;
+    margin: .5em auto;
+    font-family: 'Voces', cursive;
+}
+
+.inscripcion {
+    width: 90%;
+    margin: auto;
+}
+
+.inscripcion input,
+.inscripcion select {
+    width: 100%;
+    padding: .8em 1em;
+    margin: .8em auto;
+    font-size: 1.2em;
+}
+
+.div_cyc .nom p {
+    font-size: 1.2em;
+}
+
+.inscripcion .informe {
+    background-color: rgb(206, 240, 244);
+    font-size: 1.2em;
+    padding: 1em;
+}
+
+.inscripcion .botones button {
+    width: 100%;
+    background-color: rgb(94, 188, 73);
+    color: #fff;
+    border: none;
+    padding: 1em;
+    margin: .8em auto;
+    font-size: 1.2em;
+}
+
+.inscripcion .botones button:hover{
+    cursor: pointer;
+    color:#000
+}
+
+/* Pie de página */
+
+.pie {
+    background-color: rgb(6, 61, 74);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em auto;
+    font-family: 'Voces', cursive;
+}
+
+.pie .elem-pie {
+    padding: 1em;
+    text-transform: uppercase;
+}
+
+.pie .elem-pie a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.pie .elem-pie:hover {
+    border: 1px solid #fff;
+}
+
+/* Estilos para dispositivos con pantalla grande */
+
+@media (min-width: 600px) {
+
+    /* Encabezado */
+    body {
+        padding-top: 10em;
+    }
+
+    .empresa {
+        margin-top: 0;
+    }
+
+    .encabezado {
+        background-color: #313131;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 7em;
+    }
+
+    .encabezado .empresa .logo img {
+        width: 7.5em;
+    }
+
+    .encabezado .menu ul {
+        flex-direction: row;
+        width: 100%;
+        margin: auto 1em auto auto
+    }
+
+    .encabezado .menu ul li {
+        margin: auto .8em;
+        text-transform: none;
+        font-size: 1.17em;
+    }
+
+    /* Oradores  */
+
+    .oradores {
+        width: 65%;
+        margin: auto;
+    }
+
+    .tarjetas {
+        display: flex;
+    }
+
+    .tarjetas #tarj1,
+    .tarjetas #tarj2,
+    .tarjetas #tarj3
+    {
+       width: 32%;
+    }
+
+    /* Formulario de Inscripción */
+
+    .inscripcion {
+        width: 65%;
+    }
+
+    .nya {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .nya div{
+        width: 48%;
+    }
+
+    .div_cyc {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .div_cyc div{
+        width: 48%;
+    }
+
+    .inscripcion .botones{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .inscripcion .botones button{
+        margin: 1em 0;
+        width: 48%;
+    }
+
+    /* Pie de página */
+
+    .pie {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .pie .elem-pie {
+        text-align: center;
+        margin: 2.3em;
+        width: 12em;
+        height: 4em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+}

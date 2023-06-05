@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="CodoaCodo, código, aprender" />
+    <meta name="author" content="Eduardo Ezequiel Criscueli" />
+    <meta name="copyright" content="EEC" />
+
+    <!-- Ícono de la página web  -->
+    <link rel="shortcut icon" href="./imgs/codoacodo.ico" type="image/x-icon">
+
+    <!-- Estilos  -->
+    <link rel="stylesheet" href="./css/tickets.css">
+
+    <title>Conf Bs As</title>
+</head>
+
+<body>
+
+    <!-- Encabezado -->
+    <div class="encabezado">
+        <div class="empresa">
+            <div class="logo">
+                <img src="./imgs/codoacodo.png" alt="">
+            </div>
+            <div class="razon-social">
+                <p>Conf Bs.As.</p>
+            </div>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a class="primero" href="./index.html">La conferencia</a></li>
+                <li><a href="./index.html#orad">Los oradores</a></li>
+                <li><a href="./index.html#lug">El Lugar y la fecha</a></li>
+                <li><a href="./index.html#convi">Conviértete en orador</a></li>
+                <li><a class="quinto" href="#">Comprar tickets</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Categorías -->
+    <div class="oradores">
+        <div class="tarjetas">
+            <div class="tarjeta" id="tarj1">
+                <p class="tit_tarjeta">Estudiante</p>
+                <p class="descuento">Tienen un descuento</p>
+                <p class="porcentaje">80%</p>
+                <p class="presentar">*Presentar documentación</p>
+            </div>
+            <div class="tarjeta" id="tarj2">
+                <p class="tit_tarjeta">Trainee</p>
+                <p class="descuento">Tienen un descuento</p>
+                <p class="porcentaje">50%</p>
+                <p class="presentar">*Presentar documentación</p>
+            </div>
+            <div class="tarjeta" id="tarj3">
+                <p class="tit_tarjeta">Junior</p>
+                <p class="descuento">Tienen un descuento</p>
+                <p class="porcentaje">15%</p>
+                <p class="presentar">*Presentar documentación</p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Formulario de Inscripción -->
+    <div class="inscripcion">
+<p class="venta">VENTA</p>
+<P class="valor_ticket">VALOR TICKET $200</P>
+        <div class="nya">
+            <div>
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre" autofocus>
+            </div>
+            <div>
+                <input type="text" name="apellido" id="apellido" placeholder="Apellido">
+            </div>
+        </div>
+
+        <div class="correo">
+            <input type="email" name="correo" id="correo" placeholder="Correo">
+        </div>
+
+        <div class="div_cyc">
+            <div class="nom">
+                <p>Cantidad</p>
+                <input type="number" name="cantidad" id="cantidad" min="1" placeholder="Cantidad">
+            </div>
+            <div class="nom">
+                <p>Categoría</p>
+                <select name="categoria" id="categoria">
+                    <option value=".8">Estudiante</option>
+                    <option value=".5">Trainee</option>
+                    <option value=".15">Junior</option>
+                </select>
+            </div>
+
+        </div>
+
+        <div class="informe">
+            <p>Total a pagar: $ <span id="costo"></span></p>
+        </div>
+
+        <div class="botones">
+            <button id="btn-borrar">Borrar</button>
+            <button id="btn-resumen">Resumen</button>
+        </div>
+
+    </div>
+
+    <!-- Pie de página -->
+    <div class="pie">
+        <div class="elem-pie"><a href="#">Preguntas<br>frecuentes</a></div>
+        <div class="elem-pie"><a href="#">Contáctanos</a></div>
+        <div class="elem-pie"><a href="#">Prensa</a></div>
+        <div class="elem-pie"><a href="#">Conferencias</a></div>
+        <div class="elem-pie"><a href="#">Términos y<br>condiciones</a></div>
+        <div class="elem-pie"><a href="#">Privacidad</a></div>
+        <div class="elem-pie"><a href="#">Estudiantes</a></div>
+    </div>

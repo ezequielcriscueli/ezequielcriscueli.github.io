@@ -1,0 +1,515 @@
+/* 
+Los estilos se pensaron para dispositivos móviles.
+Las secciones y los elementos se respetaron por su ubicación.botones
+ */
+
+/* fuente de letra  */
+@import url('https://fonts.googleapis.com/css2?family=Voces&display=swap');
+
+/* Reseteo de estilos de navegadores */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Encabezado */
+body {
+    padding-top: 17em;
+}
+
+.encabezado {
+    background-color: #000;
+    width: 100%;
+    color: #fff;
+    width: 100%;
+    /* hacemos que la cabecera ocupe el ancho completo de la página */
+    left: 0;
+    /* Posicionamos la cabecera al lado izquierdo */
+    top: 0;
+    /* Posicionamos la cabecera pegada arriba */
+    position: fixed;
+    /* Hacemos que la cabecera tenga una posición fija */
+    z-index: 10;
+}
+
+.empresa {
+    display: flex;
+    align-items: center;
+}
+
+.encabezado .empresa .logo img {
+    width: 6em;
+}
+
+.encabezado .empresa .razon-social {
+    font-size: 1.5em;
+    font-family: 'Voces', cursive;
+}
+
+.encabezado .menu ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin-left: 1em;
+}
+
+.encabezado .menu ul li {
+    margin-bottom: .8em;
+    text-transform: uppercase;
+    font-family: 'Voces', cursive;
+}
+
+.encabezado .menu ul li a {
+    text-decoration: none;
+    color: #9f9f9f;
+}
+
+.encabezado .menu ul li a:hover {
+    border-bottom: #9f9f9f solid 1px;
+}
+
+.encabezado .menu ul li .primero {
+    color: #fff;
+    font-weight: bold;
+}
+
+.encabezado .menu ul li .primero:hover {
+    border-bottom: #fff solid 1px;
+}
+
+.encabezado .menu ul li .quinto {
+    color: rgb(119, 163, 74);
+}
+
+.encabezado .menu ul li .quinto:hover {
+    border-bottom: 1px solid rgb(119, 163, 74)
+}
+
+
+/* Foto de Bs. As. con título y párrafo */
+
+.foto-ppal img {
+    width: 100%;
+    height: 25em;
+    /*estaba en 21*/
+    margin-top: -3em;
+    /*agrege*/
+    position: absolute;
+    display: inline-block;
+    text-align: center;
+    z-index: -1;
+}
+
+.foto-ppal .foto-ppal-titulo {
+    font-size: 2em;
+    font-family: 'Voces', cursive;
+}
+
+.foto-ppal p {
+    position: relative;
+    top: 10px;
+    left: 10px;
+    color: #fff;
+    width: 94%;
+    text-align: justify;
+    font-size: 1em;
+    font-family: 'Voces', cursive;
+}
+
+.foto-ppal .botones {
+    display: flex;
+    flex-direction: column;
+    margin-top: .8em;
+}
+
+.foto-ppal .botones button {
+    margin-top: 1em;
+    width: 80%;
+    margin: .7em auto;
+    padding: 5px 10px;
+}
+
+.foto-ppal .botones button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.foto-ppal .botones .btn-1 {
+    background: none;
+    color: #fff;
+    border: 1px solid #fff;
+    font-size: 1em;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+.foto-ppal .botones .btn-2 {
+    background-color: rgb(72, 144, 0);
+    color: #fff;
+    font-size: 1em;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+/* Conoce a los oradores */
+
+.oradores {
+    padding-top: 1em;
+    /* agregue */
+}
+
+.oradores p {
+    text-align: center;
+    font-family: 'Voces', cursive;
+}
+
+.p-orad1 {
+    margin-top: .5em;
+}
+
+.p-orad2 {
+    font-size: 1.7em;
+}
+
+.oradores .tarjetas {
+    margin-top: 1em;
+}
+
+.oradores .tarjetas .tarjeta {
+    width: 90%;
+    margin: 1em auto;
+    border: 1px solid rgb(161, 160, 160);
+    font-family: 'Voces', cursive;
+}
+
+.oradores .tarjetas .tarjeta img {
+    width: 100%;
+}
+
+.oradores .tarjetas .tarjeta span {
+    padding: 5px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 1em;
+    margin-left: 1em;
+}
+
+.oradores .tarjetas .tarjeta .js {
+    color: #fff;
+    background-color: goldenrod;
+}
+
+.oradores .tarjetas .tarjeta .re {
+    color: #fff;
+    background-color: rgb(25, 124, 140);
+}
+
+.oradores .tarjetas .tarjeta .ng {
+    color: #fff;
+    background-color: rgb(97, 97, 97);
+}
+
+.oradores .tarjetas .tarjeta .su {
+    color: #fff;
+    background-color: rgb(227, 16, 16);
+}
+
+.oradores .tarjetas .tarjeta .tarjeta-titulo {
+    text-align: left;
+    margin-left: .5em;
+    font-size: 2em;
+}
+
+.oradores .tarjetas .tarjeta .tarjeta-parrafo {
+    text-align: justify;
+    margin: auto 1em;
+    line-height: 1.5;
+}
+
+/* Playa de Honolulu */
+
+.honolulu,
+.honolulu .foto,
+.honolulu .cuadro,
+.honolulu .foto img {
+    width: 100%;
+    font-family: 'Voces', cursive;
+}
+
+.honolulu .cuadro {
+    color: #fff;
+    background-color: #3e3e3e;
+    padding: 1em;
+    font-size: 1.5em;
+    /* text-align: justify; */
+}
+
+.honolulu .cuadro p:nth-child(1) {
+    font-size: 1.7em;
+}
+
+.honolulu .cuadro button {
+    margin: 2em auto .5em auto;
+    border: 1px solid #fff;
+    padding: .6em 2em;
+    color: #fff;
+    background: none;
+    font-size: 1em;
+}
+
+.honolulu .cuadro button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+/* Formulario de Inscripción */
+
+.inscripcion p {
+    text-align: center;
+    font-family: 'Voces', cursive;
+}
+
+.inscripcion p:nth-child(3) {
+    width: 90%;
+    margin: auto;
+}
+
+.inscripcion p:nth-child(3) span {
+    text-decoration: underline;
+    text-decoration-style: dotted;
+}
+
+.frm form {
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+}
+
+.frm form input,
+.frm form textarea {
+    margin: .7em 0;
+    border: 1px solid #767676;
+    padding: 1em 2em;
+    font-size: 1.2em;
+    width: 100%;
+}
+
+.frm form textarea {
+    font-size: 1.6em;
+    margin-bottom: 0.2em;
+}
+
+.frm form small {
+    color: #5d5d5d;
+}
+
+.frm form input[type=submit] {
+    background-color: rgb(132, 193, 72);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+}
+
+.frm form input[type=submit]:hover {
+    cursor: pointer;
+    color:#000;
+}
+
+/* Pie de página */
+
+.pie {
+    background-color: rgb(6, 61, 74);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em auto;
+    font-family: 'Voces', cursive;
+}
+
+.pie .elem-pie {
+    padding: 1em;
+    text-transform: uppercase;
+}
+
+.pie .elem-pie a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.pie .elem-pie:hover {
+    border: 1px solid #fff;
+}
+
+/* Estilos para dispositivos con pantalla grande */
+
+@media (min-width: 600px) {
+
+    /* Encabezado */
+    body {
+        padding-top: 10em;
+    }
+
+    .empresa {
+        margin-top: 0;
+    }
+
+    .encabezado {
+        background-color: #313131;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 7em;
+    }
+
+    .encabezado .empresa .logo img {
+        width: 7.5em;
+    }
+
+    .encabezado .menu ul {
+        flex-direction: row;
+        width: 100%;
+        margin: auto 1em auto auto
+    }
+
+    .encabezado .menu ul li {
+        margin: auto .8em;
+        text-transform: none;
+        font-size: 1.17em;
+    }
+
+    /* Foto de Bs. As. con título y párrafo */
+    .foto-ppal {
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: end;
+    }
+
+    .foto-ppal img {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        display: inline-block;
+        text-align: center;
+        top: 2em;
+        z-index: -1;
+    }
+
+    .foto-ppal .foto-ppal-titulo {
+        margin-top: 6em;
+        text-align: right;
+        margin-right: 2.5em;
+        font-size: 3em;
+    }
+
+    .foto-ppal p {
+        margin-right: 0;
+        width: 40vw;
+        margin-right: 6em;
+        text-align: right;
+    }
+
+    .foto-ppal .botones {
+        flex-direction: row;
+        margin-right: 6em;
+    }
+
+    .foto-ppal .botones .btn-1 {
+        width: 16em;
+        padding: 10px;
+    }
+
+    .foto-ppal .botones .btn-2 {
+        margin-left: 2em;
+        width: 16em;
+        border: none;
+        padding: 10px;
+    }
+
+    /* Oradores */
+
+    .oradores {
+        padding-top: 0;
+        /* agregue */
+    }
+
+    .tarjetas {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .oradores {
+        margin-top: 14em;
+    }
+
+    .oradores .tarjetas .tarjeta {
+        margin: 1em 3em;
+        width: 25%;
+    }
+
+    /* Playa de Honolulu  */
+    .honolulu {
+        display: flex;
+    }
+
+    .honolulu .foto img {
+        height: 100%;
+    }
+
+    .honolulu .cuadro {
+        margin-left: .1em;
+    }
+
+    .honolulu .cuadro p:nth-child(2) {
+        font-size: .6em;
+    }
+
+    .honolulu .cuadro button {
+        font-size: .7em;
+    }
+
+    /* Formulario de Inscripción */
+    .inscripcion {
+        width: 60%;
+        margin: auto;
+    }
+
+    .inscripcion p:nth-child(3) span {
+        width: 95%;
+        text-decoration: underline;
+        text-decoration-style: dotted;
+    }
+
+    .inscripcion .frm form .inp {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .inscripcion .frm form .inp input {
+        width: 48%;
+    }
+
+    /* Pie de página */
+
+    .pie {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .pie .elem-pie {
+        text-align: center;
+        margin: 2.3em;
+        width: 12em;
+        height: 4em;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+}
