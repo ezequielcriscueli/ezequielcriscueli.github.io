@@ -1,22 +1,51 @@
-const categoria = document.querySelector("#categoria")
-const cantidad = document.querySelector("#cantidad")
-const totalAPagar = document.querySelector("#totalAPagar")
+const valorTicket = 200;
+document.querySelector("#valor_base").innerHTML = valorTicket;
+document.querySelector("#costo").innerHTML = valorTicket;
 
-function resumen(){
-    let resultado
+const descuentos = {
+    "Estudiante": 0.8,
+    "Trainee": 0.5,
+    "Junior": 0.15
+};
+const descuentoEstudiante = 0.8;
+const descuentoTrainee = 0.5;
+const descuentoJunior = 0.15;
 
-    switch (categoria.value) {
+function actualizarMontoTotal() {
+    let resultado = valorTicket;
+
+    const cantidadDOM = document.querySelector("#cantidad");
+    const categoriaDOM = document.querySelector("#categoria");
+    switch (categoriaDOM.value) {
         case "Estudiante":
-            resultado = (200 - (200 * 0.8)) * cantidad.value
+            resultado = obtenerDescuento(valorTicket, descuentos[categoriaDOM.value]) * cantidadDOM.value
             break;
         case "Trainee":
-            resultado = (200 - (200 * 0.5)) * cantidad.value
+            resultado = obtenerDescuento(valorTicket, descuentos[categoriaDOM.value]) * cantidadDOM.value
             break;
         case "Junior":
-            resultado = (200 - (200 * 0.15)) * cantidad.value
+            resultado = obtenerDescuento(valorTicket, descuentos[categoriaDOM.value]) * cantidadDOM.value
             break
         default:
+            resultado = valorTicket * cantidadDOM.value;
             break;
     }
-    totalAPagar.value = `Total a pagar: $${resultado}`
+
+    const costoDOM = document.querySelector("#costo");
+    costoDOM.innerHTML = resultado;
+}
+
+function obtenerDescuento(precio, descuento) {
+    return precio - (precio * descuento);
+}
+
+function reiniciarForm() {
+    document.querySelector("#correo").value = "";
+    document.querySelector("#apellido").value = "";
+    document.querySelector("#nombre").value = "";
+    document.querySelector("#cantidad").value = "";
+    document.querySelector("#categoria").value = "";
+
+    const costoDOM = document.querySelector("#costo");
+    costoDOM.innerHTML = valorTicket;
 }

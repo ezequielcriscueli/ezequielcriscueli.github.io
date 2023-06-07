@@ -19,7 +19,6 @@
 </head>
 
 <body>
-
     <!-- Encabezado -->
     <div class="encabezado">
         <div class="empresa">
@@ -68,8 +67,9 @@
 
     <!-- Formulario de Inscripción -->
     <div class="inscripcion">
-<p class="venta">VENTA</p>
-<P class="valor_ticket">VALOR TICKET $200</P>
+        <p class="venta">VENTA</p>
+        <P class="valor_ticket">VALOR TICKET $<span id="valor_base"></span></P>
+        
         <div class="nya">
             <div>
                 <input type="text" name="nombre" id="nombre" placeholder="Nombre" autofocus>
@@ -86,17 +86,18 @@
         <div class="div_cyc">
             <div class="nom">
                 <p>Cantidad</p>
-                <input type="number" name="cantidad" id="cantidad" min="1" placeholder="Cantidad">
+                <input type="number" name="cantidad" id="cantidad" min="1" placeholder="Cantidad" onchange="actualizarMontoTotal()" required>
             </div>
             <div class="nom">
                 <p>Categoría</p>
-                <select name="categoria" id="categoria">
-                    <option value=".8">Estudiante</option>
-                    <option value=".5">Trainee</option>
-                    <option value=".15">Junior</option>
+                <select name="categoria" id="categoria" required onchange="actualizarMontoTotal()">
+                    <option value="" disabled selected>Selecciona una opción</option>
+                    <option value="Estudiante">Estudiante</option>
+                    <option value="Trainee">Trainee</option>
+                    <option value="Junior">Junior</option>
+                    <option value="No">No aplica</option>
                 </select>
             </div>
-
         </div>
 
         <div class="informe">
@@ -104,10 +105,9 @@
         </div>
 
         <div class="botones">
-            <button id="btn-borrar">Borrar</button>
+            <button id="btn-borrar" onclick="reiniciarForm()">Borrar</button>
             <button id="btn-resumen">Resumen</button>
         </div>
-
     </div>
 
     <!-- Pie de página -->
@@ -120,3 +120,7 @@
         <div class="elem-pie"><a href="#">Privacidad</a></div>
         <div class="elem-pie"><a href="#">Estudiantes</a></div>
     </div>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
